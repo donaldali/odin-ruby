@@ -8,7 +8,7 @@ To play this game, enter `$ rake` from the root directory (mastermind).
 
 ### Color Code Format
 
-Your interaction with the game will mainly consist of you inputing a code of colors (either making a code as codemaker or guessing a code as codebreaker). A code consists of 4 colors out of 6 possible colors (Red, Green, Yellow, Blue, Magenta, and Cyan). ** _Colors can be repeated in a code._ **  You may enter a color by it's full name or first letter, case insensitive.  Enter a code as a comma or space separated list of 4 colors.  All the following are valid ways to enter the code of colors Red Green Blue Yellow:
+Your interaction with the game will mainly consist of you inputing a code of colors (either making a code as codemaker or guessing a code as codebreaker). A code consists of 4 colors out of 6 possible colors (Red, Green, Yellow, Blue, Magenta, and Cyan). **_Colors can be repeated in a code._**  You may enter a color by it's full name or first letter, case insensitive.  Enter a code as a comma or space separated list of 4 colors.  All the following are valid ways to enter the code of colors Red Green Blue Yellow:
 
 + `red green blue yellow`
 + `red, green, blue, yellow`
@@ -75,7 +75,7 @@ Colors will be displayed above the board and in the board squares (top to bottom
 You have 12 guesses to crack a code, but the fewer guesses you make the lower score your opponent gets. (You win by getting the secret code(s) in fewer guesses than your opponent).
 
 After you make a guess, your colors are displayed on the guessing board, and some feedback is given on the rating board as a number of black and/or white squares.  Each black square means you have correctly guessed a color in it's right place in the secret code; each white square means you have correctly guessed a color but in the wrong place in the secret code.  For example, a guess of `r,g,b,y` for the secret code `r,r,y,g` will yield one black square (for `r`) and two white squares (for `g` and `y`).
-** _Recall that a color may be repeated in a code._ **
+**_Recall that a color may be repeated in a code._**
 
 + *__Recommendation__: Adjust the background of your Terminal so you can see both black and white (you probably don't want a solid black or solid white background; something in between should be fine)*.
 
