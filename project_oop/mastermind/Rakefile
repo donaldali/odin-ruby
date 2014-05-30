@@ -1,0 +1,6 @@
+task :default => :play
+
+desc "Play Mastermind game"
+task :play do 
+	ruby "-w lib/mastermind.rb"
+end
