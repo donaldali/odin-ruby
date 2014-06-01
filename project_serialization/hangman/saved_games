@@ -1,0 +1,12 @@
+---
+perfect: |
+  --- !ruby/object:HangmanGame
+  view: !ruby/object:HangmanView {}
+  word: MOTTLE
+  misses: []
+  hits:
+  - E
+  - L
+  - T
+  - O
+  guesses_left: 10

@@ -1,0 +1,6 @@
+task :default => :play
+
+desc "Play Hangman game"
+task :play do 
+	ruby "-w hangman.rb"
+end
