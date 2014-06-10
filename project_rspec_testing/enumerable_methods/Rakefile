@@ -1,0 +1,14 @@
+require 'rspec/core/rake_task'
+
+task :default => :run
+
+desc "Run main enumerable methods file"
+task :run do
+	ruby "-w lib/enumerable_methods.rb"
+end
+
+desc "Run tests of enumerable methods"
+RSpec::Core::RakeTask.new(:spec) do |t|
+	t.rspec_opts = "-c -w"
+	t.verbose = false
+end

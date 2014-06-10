@@ -1,0 +1,14 @@
+require 'rspec/core/rake_task'
+
+task :default => :play
+
+desc "Play tictactoe game"
+task :play do 
+	ruby "-w lib/tictactoe.rb"
+end
+
+desc "Run tests on tictactoe game"
+RSpec::Core::RakeTask.new(:spec) do |t|
+	t.rspec_opts = "-c -w"
+	t.verbose = false
+end
